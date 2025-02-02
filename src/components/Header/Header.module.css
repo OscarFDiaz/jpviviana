@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: center;
+
+  height: 103px;
+  background-color: #fafafa;
+  width: 100vw;
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 32px;
+
+  color: black;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  & img {
+    height: 80px;
+    width: auto;
+  }
+
+  & a:hover {
+    transition: all 0.3s;
+    color: #ff2828;
+  }
+}

@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+  height: calc(100vh - 206px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  object-fit: contain;
+  object-position: 50% 20%;
+}
+
+.div {
+  position: absolute; /* Fija la posición relativa al contenedor */
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  z-index: 9;
+  height: 300px;
+  width: 300px;
+}
