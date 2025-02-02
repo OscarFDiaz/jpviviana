@@ -1,18 +1,32 @@
 import sx from './Gallery.module.css';
 
 export const Gallery = () => {
+  const images = [
+    '/2.webp',
+    '/3.webp',
+    '/4.webp',
+    '/5.webp',
+    '/6.webp',
+    '/7.webp',
+    '/8.webp',
+    '/9.webp',
+    '/10.webp',
+  ];
+
   return (
     <div id="gallery">
       <h2>Galería</h2>
       <div className={sx.container}>
-        <img src="/2.webp" alt="Background" loading="lazy" className={sx.image} />
-        <img src="/3.webp" alt="Background" loading="lazy" className={sx.image} />
-        <img src="/4.webp" alt="Background" loading="lazy" className={sx.image} />
-        <img src="/5.webp" alt="Background" loading="lazy" className={sx.image} />
-        <img src="/6.webp" alt="Background" loading="lazy" className={sx.image} />
-        <img src="/7.webp" alt="Background" loading="lazy" className={sx.image} />
-        <img src="/8.webp" alt="Background" loading="lazy" className={sx.image} />
-        <img src="/9.webp" alt="Background" loading="lazy" className={sx.image} />
+        {images.map((src, index) => (
+          <div key={src} className={'animate__animated animate__fadeIn'}>
+            <img
+              src={src}
+              alt={`Imagen ${index + 1}`}
+              loading="lazy"
+              className={`${sx.image} animate__animated animate__fadeIn`}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

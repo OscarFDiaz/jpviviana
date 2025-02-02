@@ -9,4 +9,12 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 5px;
+
+  filter: grayscale(100%);
+  transition: all 0.3s;
+
+  &:hover {
+    filter: grayscale(0%);
+  }
 }

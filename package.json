@@ -1,8 +1,9 @@
 {
   "name": "jpviviana",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://OscarFDiaz.github.io/jpviviana.git",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -11,6 +12,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

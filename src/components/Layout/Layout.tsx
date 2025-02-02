@@ -1,3 +1,5 @@
+import 'animate.css';
+
 type LayoutProps = {
   children: React.ReactNode;
 };
@@ -12,6 +14,7 @@ export const Layout = ({ children }: LayoutProps) => {
         width: '100%',
         overflow: 'hidden',
       }}
+      className={'animate__animated animate__fadeIn'}
     >
       {children}
     </div>
