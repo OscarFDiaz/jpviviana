@@ -6,6 +6,11 @@
   background-color: #fafafa;
   width: 100vw;
   padding: 20px;
+
+  @media (max-width: 768px) {
+    height: 80px;
+    gap: 16px;
+  }
 }
 
 .nav {
@@ -28,5 +33,11 @@
   & a:hover {
     transition: all 0.3s;
     color: #ff2828;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    text-align: center;
+    gap: 20px;
   }
 }

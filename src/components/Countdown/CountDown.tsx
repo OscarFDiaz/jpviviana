@@ -37,7 +37,7 @@ export const CountDown = () => {
   }, []);
 
   return (
-    <div className={sx.container}>
+    <div className={sx.container} id="countdown">
       <h2 className={sx.title}>Cuenta regresiva</h2>
 
       <div style={{ backgroundImage: `url(${COUNTDOWN})` }} className={sx.image}>

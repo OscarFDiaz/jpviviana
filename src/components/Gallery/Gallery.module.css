@@ -11,14 +11,37 @@
   height: auto;
   object-fit: cover;
   border-radius: 5px;
-
   filter: grayscale(60%);
   transition: all 0.3s;
-
   cursor: pointer;
 
-  &:hover {
-    filter: grayscale(0%);
-    scale: 1.1;
+  @media (max-width: 768px) {
+    filter: grayscale(0);
   }
+}
+
+.image:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+/* MODAL */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalImage {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.2);
 }

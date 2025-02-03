@@ -9,7 +9,12 @@ export const Hero = () => {
       <img src={BACKGROUND} alt="Background" loading="lazy" className={sx.image} />
 
       <div className={sx.div}>
-        <img src={LOGO} alt="Logo" loading="lazy" />
+        <img
+          src={LOGO}
+          alt="Logo"
+          loading="lazy"
+          className="animate__animated animate__slideInLeft animate__delay-2s"
+        />
       </div>
     </div>
   );

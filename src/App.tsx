@@ -5,6 +5,7 @@ import { Header } from './components/Header/Header';
 import { Hero } from './components/Hero/Hero';
 import { Information } from './components/Information/Information';
 import { Layout } from './components/Layout/Layout';
+import { Video } from './components/Video/Video';
 
 import 'animate.css';
 
@@ -17,6 +18,7 @@ function App() {
       <Information />
       <Gifts />
       <CountDown />
+      <Video />
     </Layout>
   );
 }
