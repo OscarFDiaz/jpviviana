@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  padding: 60px 0;
+}
+
+.title {
+  font-size: 50px;
+  color: #313131;
+  font-family: Chillen;
+}
+
+.image {
+  width: 707px;
+  height: 200px;
+
+  border-radius: 10px;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & p {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+
+    padding: 2rem;
+  }
+}

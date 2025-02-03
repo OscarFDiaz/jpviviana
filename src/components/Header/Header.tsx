@@ -9,9 +9,9 @@ export const Header = () => {
         <img src={LOGO} alt="Logo" loading="lazy" />
         <a>Inicio</a>
         <a href="#gallery">Galería</a>
-        <a>Información</a>
-        <a>Regalos</a>
-        <a>Cuenta regresiva</a>
+        <a href="#information">Información</a>
+        <a href="#gifts">Regalos</a>
+        <a href="#countdown">Cuenta regresiva</a>
       </nav>
     </header>
   );

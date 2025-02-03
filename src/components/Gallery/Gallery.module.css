@@ -3,6 +3,7 @@
   grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
   gap: 16px;
   padding: 32px;
+  overflow: hidden;
 }
 
 .image {
@@ -11,10 +12,13 @@
   object-fit: cover;
   border-radius: 5px;
 
-  filter: grayscale(100%);
+  filter: grayscale(60%);
   transition: all 0.3s;
+
+  cursor: pointer;
 
   &:hover {
     filter: grayscale(0%);
+    scale: 1.1;
   }
 }

@@ -180,3 +180,8 @@ body {
   /* opcional */
   -moz-osx-font-smoothing: grayscale;
 }
+
+@font-face {
+  font-family: Chillen;
+  src: url(/Chillen.ttf);
+}

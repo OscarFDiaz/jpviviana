@@ -1,0 +1,118 @@
+.container {
+  width: 100%;
+  padding: 64px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 50px;
+  color: #313131;
+  font-family: Chillen;
+}
+
+.cards__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 44px;
+  color: black;
+  background-color: #fafafa;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  width: 300px;
+
+  border-radius: 5px;
+  padding: 0px 25px;
+  box-shadow: 0px 0px 9px 0px rgba(131, 93, 248, 0.07);
+}
+
+.card__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+
+  & svg {
+    width: 20px;
+    height: 20px;
+    color: #ff2828;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  border: 1px solid #ff2828;
+  padding: 10px 20px;
+  border-radius: 40px;
+
+  margin-bottom: 25px;
+
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #ff2828;
+    color: white;
+
+    & svg {
+      width: 20px;
+      height: 20px;
+      color: #fafafa;
+    }
+  }
+
+  & svg {
+    width: 20px;
+    height: 20px;
+    color: #ff2828;
+  }
+}
+
+.text {
+  font-size: 1rem;
+  color: #313131;
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+
+.title__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: -40px;
+
+  font-family: Chillen;
+
+  width: 100%;
+  height: 200px;
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
