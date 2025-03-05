@@ -91,12 +91,37 @@ export const Information = () => {
           </h3>
           <hr style={{ borderTop: '1px solid #ff2828', width: '100%' }} />
           <div className={sx.card__title}>
-            <MdFace2 />
-            <p>Mujeres</p>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                flexDirection: 'column',
+                gap: '18px',
+              }}
+            >
+              <MdFace2 />
+              <p>Mujeres</p>
+            </div>
+            <div>
+              <p>- Vestido Largo</p>
+              <p>- Evitar color blanco y rojo</p>
+            </div>
           </div>
           <div className={sx.card__title}>
-            <MdFace />
-            <p>Hombres</p>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                flexDirection: 'column',
+                gap: '18px',
+              }}
+            >
+              <MdFace />
+              <p>Hombres</p>
+            </div>
+            <div>
+              <p>- Traje y Corbata</p>
+            </div>
           </div>
 
           <p className={sx.text}>* Por favor, respetar el código de vestimenta</p>
